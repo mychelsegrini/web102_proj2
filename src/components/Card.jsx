@@ -1,14 +1,11 @@
 import {useState} from 'react';
 
-
-
-const Card = ({cards}) => {
+const Card = ({cards, randomArray}) => {
     const [k, setK] = useState(0);
     const [flipped, setFlipped] = useState(false);
 
     const handleClick = () => {
         setFlipped(!flipped);
-        console.log("test");
     };
 
     const movePrevious = () => {
@@ -42,11 +39,11 @@ const Card = ({cards}) => {
             <div className= 'flip-scene'>
                 <div className = {`card ${flipped? 'is-flipped' : ''}`} onClick={handleClick}>
                     <div className="card-face card-front">
-                        {cards[k].question}
+                        {cards[randomArray[k]].question}
                     </div>
 
                     <div className="card-face card-back">
-                        {cards[k].ans}
+                        {cards[randomArray[k]].ans}
                     </div>
                 </div>
             </div>

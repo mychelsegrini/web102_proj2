@@ -4,7 +4,7 @@ Submitted by: **Mychel Segrini**
 
 This web app: **This is a useful flashcard system for learning Portuguese.**
 
-Time spent: **1** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
@@ -22,7 +22,7 @@ The following **required** functionality is completed:
 - [X] **Clicking on the card flips the card over, showing the corresponding component of the information pair**
   - [X] Clicking on a card flips it over, showing the back with corresponding information 
   - [X] Clicking on a flipped card again flips it back, showing the front
-- [] **Clicking on the next button displays a random new card**
+- [X] **Clicking on the next button displays a random new card**
 
 The following **optional** features are implemented:
 
@@ -41,10 +41,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/aUiWkpb' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with EzGif
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -52,11 +52,11 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was pretty chill. Yet, it was kind of tough to understand how to deal with Math.random(), which is an impure function. My card kept updating when it shouldn't. Eventually, I reached into something.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2026] [Mychel Segrini]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

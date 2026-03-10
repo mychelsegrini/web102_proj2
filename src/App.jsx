@@ -51,14 +51,30 @@ let cards = [
     ans: "Nice to meet you."
   }
 ];
+
+const createRandomArray = (cards) => {
+  let randomArray = [];
+  for(let m = 0; m < cards.length; m++){
+    randomArray.push(m);
+  }
+
+  for(let m = randomArray.length - 1; m > 0; m--){
+    let randomIndex = Math.floor(Math.random() * m);
+
+    [randomArray[m], randomArray[randomIndex]] = [randomArray[randomIndex], randomArray[m]];
+  }
+
+  return randomArray;
+}
 const App = () => {
+  let randomArray = createRandomArray(cards);
 
   return (
     <div className="App">
       <h1>Learning Portuguese!</h1>
       <h2>Could you go to Brazil?</h2>
       <h3>Number of cards: {cards.length}</h3>
-      <Card cards={cards}/>
+      <Card cards={cards} randomArray={randomArray}/>
     </div>
   )
 }
