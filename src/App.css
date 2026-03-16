@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .flip-scene {
   width: 200px;
   height: 30px;
@@ -22,6 +23,56 @@ body {
     no-repeat center center fixed;
     
   background-size: cover;
+}
+
+.button.deactivated{
+  color: white;
+  background-color: grey;
+}
+
+.button.activated{
+  color: white;
+  background-color: #007bff; 
+}
+
+.button.activated:hover {
+    background-color: black; 
+}
+
+.form-container{
+  margin-bottom:20px;
+}
+
+.thick-input {
+    width: 300px;           
+    padding: 16px 20px;   
+    font-size: 12px;        
+    border: 2px solid #ccc;
+    border-radius: 8px;   
+    margin-right: 12px;     
+    outline: none;       
+    transition: all 0.2s ease;
+}
+
+.beautiful-submit:hover {
+    background-color: black; 
+}
+
+.beautiful-submit {
+    padding: 16px 28px;     
+    font-size: 12px;        
+    font-weight: bold;     
+    background-color: #007bff; 
+    color: white;        
+    border: none;          
+    border-radius: 8px;   
+    cursor: pointer;     
+    transition: background-color 0.2s ease;
+}
+
+.thick-input:focus {
+    border-color: #007bff;  /* Changes border to a nice blue */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Adds a soft glow */
 }
 
 .card {
